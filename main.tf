@@ -69,9 +69,8 @@ module "blog_alb" {
       port = 80
       protocol = "HTTP"
       target_group_index= 0
-    }
 
-    default_action = {
+      default_action = {
       type = "redirect"
 
       redirect = {
@@ -80,6 +79,9 @@ module "blog_alb" {
         status_code = "HTTP_301"
       }
     }
+    }
+
+    
   }
 
   tags = {
