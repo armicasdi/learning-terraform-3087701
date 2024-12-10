@@ -73,6 +73,10 @@ module "blog_alb" {
         type = "forward"
       }
     }
+
+    default_action = {
+        type = "forward"
+      }
   }
 
   tags = {
