@@ -69,9 +69,9 @@ module "blog_alb" {
       port = 80
       protocol = "HTTP"
       target_group_index= 0
-    },
-    default_action = {
-      type = "forward"
+      default_action = {
+        type = "forward"
+      }
     }
   }
 
